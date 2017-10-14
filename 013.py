@@ -3,8 +3,9 @@
 
 if __name__ == "__main__":
     mergeCol = open("mergeCol.txt", "w")
-    col1 = open("col1.txt", "r")
     col2 = open("col2.txt", "r")
-    while()
-    mergeCol.write(line1 + "	" + line2 + "\n")
+    for line1 in open("col1.txt", "r"):
+        line2 = col2.readline()
+        mergeCol.write(line1.replace("\n", "") + "	" + line2)
     mergeCol.close()
+    col2.close()
